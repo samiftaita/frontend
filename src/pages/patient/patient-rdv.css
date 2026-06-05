@@ -1,0 +1,281 @@
+.patient-rdv-page {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 16px;
+}
+.patient-page-title {
+  margin: 0 0 12px 0;
+}
+.patient-section {
+  margin: 18px 0;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+}
+.patient-filters input,
+.patient-filters select {
+  margin-right: 8px;
+  padding: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.patient-table th,
+.patient-table td {
+  border: 1px solid #e6e6e6;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+.patient-table th {
+  background: #f7f7f7;
+}
+.patient-table-actions button {
+  margin-right: 6px;
+}
+.patient-form {
+  margin-top: 12px;
+}
+.patient-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+.patient-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.patient-form input[type="text"],
+.patient-form input[type="date"],
+.patient-form input[type="time"],
+.patient-form select,
+.patient-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+.full-width {
+  grid-column: 1/-1;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  background: #f3f4f6;
+  color: #111;
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+.btn-danger {
+  background: #ef4444;
+  color: #fff;
+  border-color: #ef4444;
+}
+.patient-success {
+  padding: 10px;
+  background: #ecfdf5;
+  border: 1px solid #bbf7d0;
+  color: #065f46;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.patient-error {
+  padding: 10px;
+  background: #fff1f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.patient-confirmation-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.patient-confirmation-modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.patient-summary {
+  margin: 12px 0;
+}
+.patient-summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #eee;
+}
+.patient-summary-label {
+  font-weight: 600;
+  color: #374151;
+}
+.patient-summary-value {
+  color: #111;
+}
+.patient-confirmation-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.patient-table-wrapper {
+  overflow: auto;
+}
+.patient-page-title {
+  font-size: 20px;
+}
+
+/* ============================== */
+/* PREMIUM VISUAL OVERRIDES       */
+/* ============================== */
+
+.patient-rdv-page {
+  padding: clamp(16px, 2vw, 28px);
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(96, 165, 250, 0.12),
+      transparent 28%
+    ),
+    linear-gradient(180deg, #f7fbff, #edf4fb);
+}
+
+.patient-section {
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  animation: slideUp 0.45s ease-out both;
+}
+
+.patient-table-wrapper {
+  border-radius: 20px;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.patient-table thead th {
+  background: linear-gradient(180deg, #eff6ff, #dbeafe);
+  color: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.patient-table tbody tr:hover {
+  background: rgba(239, 246, 255, 0.72);
+}
+
+.patient-form {
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.patient-form label {
+  color: #334155;
+}
+
+.patient-form input,
+.patient-form select,
+.patient-form textarea,
+.patient-search,
+.patient-filters input,
+.patient-filters select {
+  border-color: rgba(203, 213, 225, 0.9);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.patient-form input:focus,
+.patient-form select:focus,
+.patient-form textarea:focus,
+.patient-search:focus,
+.patient-filters input:focus,
+.patient-filters select:focus {
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.16);
+}
+
+.patient-success,
+.patient-error,
+.patient-loading,
+.patient-empty-state {
+  border-radius: 18px;
+  animation: fadeIn 0.4s ease-out both;
+}
+
+.patient-error {
+  border-color: rgba(248, 180, 180, 0.9);
+}
+
+.patient-loading .spinner {
+  margin-bottom: 14px;
+}
+
+.patient-confirmation-overlay {
+  background: rgba(15, 23, 42, 0.52);
+  backdrop-filter: blur(4px);
+}
+
+.patient-confirmation-modal {
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.16);
+  animation: scaleIn 0.2s ease-out both;
+}
+
+.patient-summary-item {
+  border-bottom-color: rgba(226, 232, 240, 0.8);
+}
+
+.patient-sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .patient-sidebar.open,
+  .patient-sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .patient-sidebar-overlay {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .patient-page-title {
+    font-size: 1.35rem;
+  }
+
+  .patient-confirmation-actions,
+  .patient-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .patient-confirmation-actions .btn,
+  .patient-form-actions .btn,
+  .patient-table-actions .btn {
+    width: 100%;
+  }
+}
